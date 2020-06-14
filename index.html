@@ -209,6 +209,37 @@
             </td>
           </tr>
           
+          <tr onmouseout="IC_stop()" onmouseover="IC_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="IC_image" style="opacity: 0;">
+                  <img src="images/IC2.png" width="160"></div>
+                <img src="images/IC1.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function IC_start() {
+                  document.getElementById('IC_image').style.opacity = "1";
+                }
+
+                function IC_stop() {
+                  document.getElementById('IC_image').style.opacity = "0";
+                }
+                IC_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8803162">
+                <papertitle>A transform learning based deconvolution technique with super-resolution and microscanning applications</papertitle>
+              </a>
+              <br>
+              A. Gungor, <strong> O.F. Kar</strong>
+              <br>
+              <em>IEEE ICIP</em>, 2019
+              <br>
+              <p></p>
+            </td>
+          </tr>
+          
 		    
         </tbody></table>   
 		
