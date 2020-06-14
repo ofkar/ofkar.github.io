@@ -103,22 +103,22 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
           
-          <tr onmouseout="porshadmanip_stop()" onmouseover="porshadmanip_start()">
+          <tr onmouseout="OL_stop()" onmouseover="OL_start()">
             <td style="padding:0px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id="porshadmanip_image" style="opacity: 0;">
+                <div class="two" id="OL_image" style="opacity: 0;">
                   <img src="images/OL2.PNG" width="160"></div>
                 <img src="images/OL1.PNG" width="160">
               </div>
               <script type="text/javascript">
-                function porshadmanip_start() {
-                  document.getElementById('porshadmanip_image').style.opacity = "1";
+                function OL_start() {
+                  document.getElementById('OL_image').style.opacity = "1";
                 }
 
-                function porshadmanip_stop() {
-                  document.getElementById('porshadmanip_image').style.opacity = "0";
+                function OL_stop() {
+                  document.getElementById('OL_image').style.opacity = "0";
                 }
-                porshadmanip_stop()
+                OL_stop()
               </script>
             </td>
             <td style="padding:0px;width:75%;vertical-align:middle">
@@ -132,6 +132,46 @@
               <br>
               <a href="https://arxiv.org/abs/1903.07987">
                   <papertitle>[arXiv]</papertitle>
+                </a>
+              <br>
+              <p></p>
+            </td>
+          </tr>
+          
+          
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="nerf_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                <source src="images/football_recon.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src="images/football_recon_still.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8969447">
+                <papertitle>Real-time compressive video reconstruction for spatial multiplexing cameras
+</papertitle>
+              </a>
+              <br>
+              <br>
+              <strong> O.F. Kar</strong>, A. Gungor, H.E. Guven
+              <br>
+              <em>IEEE GLOBALSIP</em>, 2019
+              <br>
+              <a href="https://github.com/vfpaadmm/V-FPA-ADMM">
+                  <papertitle>[Supplementary]</papertitle>
                 </a>
               <br>
               <p></p>
