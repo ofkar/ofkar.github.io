@@ -171,10 +171,44 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           
-		  <tr>
-            <td valign="top" width="25%">
-            <img src="images/OL.jpg" width="160">
+          
+          <tr onmouseout="porshadmanip_stop()" onmouseover="porshadmanip_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="porshadmanip_image" style="opacity: 0;">
+                  <img src="images/OL.jpg" width="160"></div>
+                <img src="images/OL.jpg" width="160">
+              </div>
+              <script type="text/javascript">
+                function porshadmanip_start() {
+                  document.getElementById('porshadmanip_image').style.opacity = "1";
+                }
+
+                function porshadmanip_stop() {
+                  document.getElementById('porshadmanip_image').style.opacity = "0";
+                }
+                porshadmanip_stop()
+              </script>
             </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.osapublishing.org/ol/abstract.cfm?uri=ol-44-18-4582">
+                <papertitle>Compressive spectral imaging with diffractive lenses</papertitle>
+              </a>
+              <br>
+              <strong> O.F. Kar</strong>, F.S. Oktem
+              <br>
+              <em> Optics Letters</em>, 2019 
+              <br>
+              <a href="https://arxiv.org/abs/1903.07987">
+                  <papertitle>[arXiv]</papertitle>
+                </a>
+              <br>
+              <p></p>
+            </td>
+          </tr>
+          
+		  <tr>
+            
             <td valign="top" width="75%">
               <p>
                 <a href="https://www.osapublishing.org/ol/abstract.cfm?uri=ol-44-18-4582">
