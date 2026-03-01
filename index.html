@@ -1,7 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169336973-1"></script>
@@ -16,7 +16,7 @@
 
   <meta name="author" content="Oguzhan Fatih Kar">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  
+
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/eagle.png">
@@ -24,6 +24,23 @@
 </head>
 
 <body>
+  <div id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">
+    <svg id="dark-mode-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg id="dark-mode-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </div>
+
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -33,18 +50,14 @@
               <p style="text-align:center">
                 <name>Oğuzhan Fatih Kar</name>
               </p>
-              <p> I am a Ph.D. student in Computer Science at the <a href="https://www.epfl.ch/en/">Swiss Federal Institute of Technology (EPFL)</a>, where I am advised by <a href="https://cs.stanford.edu/~amirz/">Amir Zamir</a>. My current research interests are in building <b>robust</b>, <b>adaptive</b>, and <b>multimodal</b> perception systems that can scale and operate in the real world. My recent works on this topic are <a href="https://brave-vlms.epfl.ch/">BRAVE</a>, <a href="https://4m.epfl.ch/">4M & 4M-21</a>, <a href="https://rapid-network-adaptation.epfl.ch/">Rapid Network Adaptation</a>, <a href="https://3dcommoncorruptions.epfl.ch/">3D Common Corruptions</a>, and <a href="https://crossdomain-ensembles.epfl.ch/">Cross-Domain Ensembles</a>.
+              <p> I am a Machine Learning Researcher at <a href="https://machinelearning.apple.com/">Apple</a>. My research interests are in building <b>generalist multimodal agents</b> that can perceive, reason, and act in physical and digital worlds.
               </p>
               <p>
-                I received the B.S. and M.S. degrees in Electrical Engineering at <a href="http://eee.metu.edu.tr/">METU</a>, where I have worked with <a href="https://blog.metu.edu.tr/figeno/">Figen Oktem</a>. My <a href="http://etd.lib.metu.edu.tr/upload/12623490/index.pdf">M.S. work</a> had focused on developing high-resolution and compressive reconstruction techniques for computational imaging.
+                I received my Ph.D. in Computer Science from <a href="https://www.epfl.ch/en/">EPFL</a>, where I was advised by <a href="https://cs.stanford.edu/~amirz/">Amir Zamir</a>. My <a href="https://infoscience.epfl.ch/entities/publication/94bdefd4-e421-4e64-8190-34b45716f575">PhD thesis</a> was on building scalable multimodal foundation models that can process diverse inputs such as images, text, 3D, semantics and other sensory data to solve a wide variety of real-world tasks. In 2023/2024, I interned at <a href="https://research.google/locations/zurich/">Google</a> working on vision-language models with <a href="https://federicotombari.github.io/">Federico Tombari</a>. I received my M.S. and B.S. in Electrical Engineering from <a href="http://eee.metu.edu.tr/">METU</a>, where I was advised by <a href="https://blog.metu.edu.tr/figeno/">Figen Oktem</a>.
               </p>
-              
-              <b>
-              <!-- <b><font color="#C00000">Update:</font></b> I am starting to look for research scientist positions. Feel free to reach out to discuss potential opportunities or collaborations. </b> -->
-                  
+
               <p align=center>
-                <a href="mailto:oguzhan.kar AT epfl.ch">Email</a> &nbsp/&nbsp
-                <a href="data/OguzhanFatihKar_CV_March25.pdf">CV</a> &nbsp/&nbsp
+                <a href="mailto:oguzhanfatihkar@gmail.com">Email</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com.tr/citations?user=Ojtk2_MAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/ofkar">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/oguzhanfatihkar/"> LinkedIn </a> &nbsp/&nbsp
@@ -52,88 +65,28 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img src="images/OFK_profile_lr4.png" style="width:100%;max-width:100%">
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Education</heading>
-              <p>
-                
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <p>
-                <strong> Ph.D. in Computer Science, 2025</strong>
-                <br>
-                <a href="https://www.epfl.ch/schools/ic/">
-                  <papertitle>EPFL</papertitle>
-                </a>
-               </p>
-               
-               <p>
-                <strong> M.S. in Electrical and Electronics Engineering, 2019</strong>
-                <br>
-                <a href="https://eee.metu.edu.tr/">
-                  <papertitle>METU</papertitle>  
-                </a> (GPA:3.93/4.00) /
-                <a href="http://etd.lib.metu.edu.tr/upload/12623490/index.pdf">
-                  Thesis
-                </a>
-               </p>
-               
-               <p>
-                <strong> B.S. in Electrical and Electronics Engineering, 2017</strong>
-                <br>
-                <a href="https://eee.metu.edu.tr/">
-                  <papertitle>METU</papertitle>  
-                </a>(GPA:3.90/4.00) 
-               </p>
-                
+              <img src="images/oguzhan.JPG" style="width:100%;max-width:100%;border-radius:50%">
             </td>
           </tr>
         </tbody></table>
 
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>News</heading>
+              <heading>Honors</heading>
             </td>
           </tr>
         </tbody></table>
 
         <ul>
-          <li> <strong>Mar, 2025:</strong> I have successfully passed my PhD private defense!</li>
-      </ul>
-        
-        <ul>
-                  <li> <strong>Nov, 2024:</strong> I am selected as a top reviewer for <a href="https://neurips.cc/Conferences/2024/ProgramCommittee#top-reviewers">NeurIPS 2024</a>!</li>
-              </ul>
-        
-        
-        <ul>
-                  <li> <strong>June, 2024:</strong> I gave a talk at ETH Zurich on multimodal foundation models.</li>
-              </ul>
-        <ul>
-                  <li> <strong>Nov, 2023:</strong> I started my student researcher position at <a href="https://research.google/locations/zurich/">Google Zurich</a>! I'll be focusing on multimodal foundation models.</li>
-              </ul>
-	      <ul>
-					<li> <strong>Feb, 2023:</strong> I gave a talk at <a href="https://cemse.kaust.edu.sa/ai/aii-symp-2023">KAUST Rising Stars in AI Symposium</a>.</li>
-				</ul>
-        <ul>
-					<li> <strong>Dec, 2022:</strong> I gave a talk at <a href="https://youtu.be/UFmFhiYEuys?t=3380">AIP RIKEN TrustML Young Scientist Seminar</a>.</li>
-				</ul>
-        
+          <li><a href="https://actu.epfl.ch/news/dimitris-n-chorafas-foundation-award-2025-oguzhan/">Chorafas Award</a> for PhD Thesis, 2025</li>
+          <li>Top Reviewer, <a href="https://neurips.cc/Conferences/2024/ProgramCommittee#top-reviewers">NeurIPS 2024</a></li>
+          <li>CVPR Best Paper Award Nomination for <a href="http://consistency.epfl.ch">Cross-Task Consistency</a>, 2020</li>
+          <li>EPFL EDIC PhD Fellowship, 2019-2020</li>
+          <li>TUBITAK Full Scholarship during M.S., 2017-2019</li>
+          <li>METU <a href="http://bka.eee.metu.edu.tr/awardees/?lang=en">Bulent Kerim Altay Award</a>, 2015</li>
+        </ul>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -143,6 +96,87 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="mfm_stop()" onmouseover="mfm_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="mfm_image" style="opacity: 0;">
+                    <img src="images/mfm_evals.png" width="160"></div>
+                  <img src="images/mfm_evals.png" width="160">
+                </div>
+                <script type="text/javascript">
+                  function mfm_start() {
+                    document.getElementById('mfm_image').style.opacity = "1";
+                  }
+
+                  function mfm_stop() {
+                    document.getElementById('mfm_image').style.opacity = "0";
+                  }
+                  mfm_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2507.01955">
+                  <papertitle>How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation Models on Standard Computer Vision Tasks</papertitle>
+                </a>
+                <br>
+                <br>
+                R. Ramachandran, A. Garjani, R. Bachmann, A. Atanov*, <strong>O.F. Kar*</strong>, A. Zamir*
+                <br>
+                <em>ICLR</em>, 2026
+                <br>
+                <a href="https://fm-vision-evals.epfl.ch/">
+                    <papertitle>[Website]</papertitle>
+                  </a>
+                <a href="https://github.com/EPFL-VILAB/fm-vision-evals">
+                    <papertitle>[Code]</papertitle>
+                  </a>
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr onmouseout="flextok_stop()" onmouseover="flextok_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="flextok_image" style="opacity: 0;">
+                    <img src="images/flextok.png" width="160"></div>
+                  <img src="images/flextok.png" width="160">
+                </div>
+                <script type="text/javascript">
+                  function flextok_start() {
+                    document.getElementById('flextok_image').style.opacity = "1";
+                  }
+
+                  function flextok_stop() {
+                    document.getElementById('flextok_image').style.opacity = "0";
+                  }
+                  flextok_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2502.13967">
+                  <papertitle>FlexTok: Resampling Images into 1D Token Sequences of Flexible Length</papertitle>
+                </a>
+                <br>
+                <br>
+                R. Bachmann*, J. Allardice*, D. Mizrahi*, E. Fini, <strong>O.F. Kar</strong>, E. Amirloo, A. El-Nouby, A. Zamir, A. Dehghan
+                <br>
+                <em>ICML</em>, 2025
+                <br>
+                <a href="https://flextok.epfl.ch/">
+                    <papertitle>[Website]</papertitle>
+                  </a>
+                <a href="https://github.com/apple/ml-flextok">
+                    <papertitle>[Code]</papertitle>
+                  </a>
+                <a href="https://huggingface.co/spaces/EPFL-VILAB/FlexTok">
+                    <papertitle>[Demo]</papertitle>
+                  </a>
+                <br>
+                <p></p>
+              </td>
+            </tr>
 
             <tr onmouseout="a2a_stop()" onmouseover="a2a_stop()">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -185,7 +219,7 @@
                 <p></p>
               </td>
             </tr>
-            
+
             <tr onmouseout="brave_stop()" onmouseover="brave_stop()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -221,8 +255,8 @@
                 <p></p>
               </td>
             </tr>
-            
-            
+
+
             <tr onmouseout="ctd_stop()" onmouseover="ctd_stop()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -326,7 +360,7 @@
               <br>
               T. Yeo, <strong> O.F. Kar</strong>, Z. Sodagar, A. Zamir
               <br>
-              <em>ICCV</em>, 2023 
+              <em>ICCV</em>, 2023
               <br>
               <a href="https://rapid-network-adaptation.epfl.ch/">
                   <papertitle>[Website]</papertitle>
@@ -337,8 +371,8 @@
             </td>
           </tr>
 
-          
-          
+
+
           <tr onmouseout="cc3d_stop()" onmouseover="cc3d_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -368,7 +402,7 @@
               <br>
               <strong>O.F. Kar</strong>, T. Yeo, A. Atanov, A. Zamir
               <br>
-              <em>CVPR</em>, 2022 [<b><font color="#C00000">Oral, Top 4%</font></b>] 
+              <em>CVPR</em>, 2022 [<b><font color="#C00000">Oral, Top 4%</font></b>]
               <br>
               <a href="https://3dcommoncorruptions.epfl.ch/">
                   <papertitle>[Website]</papertitle>
@@ -389,7 +423,7 @@
               <p></p>
             </td>
           </tr>
-          
+
           <tr onmouseout="xde_stop()" onmouseover="xde_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -416,7 +450,7 @@
               <br>
               <strong> O.F. Kar*</strong>, T. Yeo*, A. Zamir
               <br>
-              <em>ICCV</em>, 2021 [<b><font color="#C00000">Oral, Top 3%</font></b>] 
+              <em>ICCV</em>, 2021 [<b><font color="#C00000">Oral, Top 3%</font></b>]
               <br>
               <a href="https://crossdomain-ensembles.epfl.ch/">
                   <papertitle>[Website]</papertitle>
@@ -434,7 +468,7 @@
               <p></p>
             </td>
           </tr>
-		
+
           <tr onmouseout="xtc_stop()" onmouseover="xtc_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -461,7 +495,7 @@
               <br>
               A. Zamir*, A. Sax*, T. Yeo, <strong> O.F. Kar</strong>, N. Cheerla, R. Suri, Z. Cao, J. Malik, L. Guibas
               <br>
-              <em>Arxiv</em>, 2020. <em>CVPR</em>, 2020 <strong><font color="#C00000">[Best Paper Award Nominee, Oral]</font></strong> 
+              <em>Arxiv</em>, 2020. <em>CVPR</em>, 2020 <strong><font color="#C00000">[Best Paper Award Nominee, Oral]</font></strong>
               <br>
               <a href="http://consistency.epfl.ch/demo/">
                   <papertitle>[Live Demo]</papertitle>
@@ -482,68 +516,12 @@
               <p></p>
             </td>
           </tr>
-          
-          
-          
-        
-        
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Misc</heading>
-              <p>
-                
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              
-                
-                <!--video width="100%" height="100%" muted="" autoplay="" loop="">
-                <source src="https://www.youtube.com/watch?v=kFQAn-9DbWc" type="video/mp4">
-                Your browser does not support the video tag.
-                </video-->
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/kFQAn-9DbWc" frameborder="0" allow="accelerometer; 
-                autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
 
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.youtube.com/watch?v=kFQAn-9DbWc">
-                <papertitle>Robustness and uncertainty estimation for visual perception
-</papertitle>
-              </a>
-              <br>
-              <br>
-              This is a presentation I made on the relation between robustness and uncertainty in computer vision. 
-              The video also includes an overview of three important papers in uncertainty estimation in deep learning models.
-              <br>
-              <br>
-              <a href="https://ofkar.github.io/data/Robustness_Uncertainty_SlideDeck.pdf">
-                  <papertitle>[Slides]</papertitle>
-                </a>
-               <a href="http://papers.nips.cc/paper/7141-what-uncertainties-do-we-need-in-bayesian-deep-learning-for-computer-vision.pdf">
-                  <papertitle>[Paper #1]</papertitle>
-                </a>
-               <a href="http://papers.nips.cc/paper/7219-simple-and-scalable-predictive-uncertainty-estimation-using-deep-ensembles.pdf">
-                  <papertitle>[Paper #2]</papertitle>
-                </a>
-               <a href="https://dl.acm.org/doi/pdf/10.5555/3305381.3305518">
-                  <papertitle>[Paper #3]</papertitle>
-                </a>
-              <br>
-              <p></p>
-            </td>
-          </tr>
-          
-        </tbody></table>
-        
+
+
+
+
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -557,7 +535,7 @@
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>    
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
           <tr onmouseout="tci_stop()" onmouseover="tci_start()">
@@ -586,7 +564,7 @@
               <br>
               F.S. Oktem, <strong> O.F. Kar</strong>, C. D. Bezek, F. Kamalabadi
               <br>
-              <em>IEEE Transactions on Computational Imaging</em>, 2021 
+              <em>IEEE Transactions on Computational Imaging</em>, 2021
               <br>
               <a href="https://arxiv.org/abs/2008.11625">
                   <papertitle>[Arxiv]</papertitle>
@@ -595,7 +573,7 @@
               <p></p>
             </td>
           </tr>
-          
+
           <tr onmouseout="OL_stop()" onmouseover="OL_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -621,7 +599,7 @@
               <br>
               <strong> O.F. Kar</strong>, F.S. Oktem
               <br>
-              <em> Optics Letters</em>, 2019 
+              <em> Optics Letters</em>, 2019
               <br>
               <a href="https://arxiv.org/abs/1903.07987">
                   <papertitle>[arXiv]</papertitle>
@@ -630,8 +608,8 @@
               <p></p>
             </td>
           </tr>
-          
-          
+
+
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -670,7 +648,7 @@
               <p></p>
             </td>
           </tr>
-          
+
           <tr onmouseout="GS_stop()" onmouseover="GS_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -701,7 +679,7 @@
               <p></p>
             </td>
           </tr>
-          
+
           <tr onmouseout="IC_stop()" onmouseover="IC_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -732,7 +710,7 @@
               <p></p>
             </td>
           </tr>
-          
+
           <tr onmouseout="IC18_stop()" onmouseover="IC18_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -763,12 +741,12 @@
               <p></p>
             </td>
           </tr>
-          
-		    
-        </tbody></table>   
-		
+
+
+        </tbody></table>
+
 		<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=bY51T_c6i3uP7aJwzkZaE84v6gtuyKcbRekNRDim8O0'></script>
-		
+
 		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td>
@@ -777,6 +755,9 @@
                 <font size="2">
                   <a href="https://jonbarron.info/"><strong>Template</strong></a>
                   </font>
+              </p>
+              <p align="right">
+                <font size="2">Last Update: March 2026</font>
               </p>
             </td>
           </tr>
@@ -795,7 +776,25 @@
     </tr>
   </table>
 
- 
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      var isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+      document.getElementById('dark-mode-icon-moon').style.display = isDark ? 'none' : 'block';
+      document.getElementById('dark-mode-icon-sun').style.display = isDark ? 'block' : 'none';
+    }
+
+    // Load saved preference
+    (function() {
+      var saved = localStorage.getItem('darkMode');
+      if (saved === 'true') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('dark-mode-icon-moon').style.display = 'none';
+        document.getElementById('dark-mode-icon-sun').style.display = 'block';
+      }
+    })();
+  </script>
 
 </body>
 

@@ -129,3 +129,74 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  background: #e0e0e0;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+body.dark-mode td,
+body.dark-mode th,
+body.dark-mode tr,
+body.dark-mode p,
+body.dark-mode strong {
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #5ba3e6;
+}
+
+body.dark-mode a:focus,
+body.dark-mode a:hover {
+  color: #f09228;
+}
+
+body.dark-mode name {
+  color: #f0f0f0;
+}
+
+body.dark-mode heading {
+  color: #f0f0f0;
+}
+
+body.dark-mode papertitle {
+  color: #c8d6e5;
+}
+
+body.dark-mode #dark-mode-toggle {
+  background: #2d2d44;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+  background: #3d3d55;
+}
+
+body.dark-mode span.highlight {
+  background-color: #3d3d00;
+}
