@@ -97,6 +97,205 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="weblica_stop()" onmouseover="weblica_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="weblica_image" style="opacity: 0;"><video width="100%" style="height:auto;" muted="" autoplay="" loop="">
+                  <source src="images/weblica.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src="images/weblica.png" width="160">
+                </div>
+                <script type="text/javascript">
+                  function weblica_start() {
+                    document.getElementById('weblica_image').style.opacity = "1";
+                  }
+
+                  function weblica_stop() {
+                    document.getElementById('weblica_image').style.opacity = "0";
+                  }
+                  weblica_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2605.06761">
+                  <papertitle>Weblica: Scalable and Reproducible Training Environments for Visual Web Agents</papertitle>
+                </a>
+                <br>
+                <br>
+                <strong>O.F. Kar</strong>, R. Bachmann, Y. Gong, A.B.L. Larsen, A. Dehghan
+                <br>
+                <em>arXiv</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2605.06761">
+                    <papertitle>[arXiv]</papertitle>
+                  </a>
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr onmouseout="soto_stop()" onmouseover="soto_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="soto_image" style="opacity: 0;">
+                    <img src="images/soto.png" width="160"></div>
+                  <img src="images/soto.png" width="160">
+                </div>
+                <script type="text/javascript">
+                  function soto_start() {
+                    document.getElementById('soto_image').style.opacity = "1";
+                  }
+
+                  function soto_stop() {
+                    document.getElementById('soto_image').style.opacity = "0";
+                  }
+                  soto_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2604.15453">
+                  <papertitle>(1D) Ordered Tokens Enable Efficient Test-Time Search</papertitle>
+                </a>
+                <br>
+                <br>
+                Z. Gao, P. Rezaei, A. Cy, M. Ye, N. Jovanovi&cacute;, J. Allardice, A. Dehghan, A. Zamir, R. Bachmann<sup>&dagger;</sup>, <strong>O.F. Kar<sup>&dagger;</sup></strong>
+                <br>
+                <em>ICML</em>, 2026
+                <br>
+                <a href="https://soto.epfl.ch/">
+                    <papertitle>[Website]</papertitle>
+                  </a>
+                <a href="https://github.com/EPFL-VILAB/search-over-tokens">
+                    <papertitle>[Code]</papertitle>
+                  </a>
+                <a href="https://huggingface.co/spaces/EPFL-VILAB/search-over-tokens">
+                    <papertitle>[Demo]</papertitle>
+                  </a>
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr onmouseout="vft_stop()" onmouseover="vft_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="vft_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                  <source src="images/videoflextok.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src="images/videoflextok.png" width="160">
+                </div>
+                <script type="text/javascript">
+                  function vft_start() {
+                    document.getElementById('vft_image').style.opacity = "1";
+                  }
+
+                  function vft_stop() {
+                    document.getElementById('vft_image').style.opacity = "0";
+                  }
+                  vft_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2604.12887">
+                  <papertitle>VideoFlexTok: Flexible-Length Coarse-to-Fine Video Tokenization</papertitle>
+                </a>
+                <br>
+                <br>
+                A. Atanov*, J. Allardice*, R. Bachmann, <strong>O.F. Kar</strong>, R.D. Hjelm, D. Griffiths, P. Fu, A. Dehghan, A. Zamir
+                <br>
+                <em>ICML</em>, 2026 [<b><font color="#C00000">Spotlight, Top 2.2%</font></b>]
+                <br>
+                <a href="https://videoflextok.epfl.ch/">
+                    <papertitle>[Website]</papertitle>
+                  </a>
+                <a href="https://github.com/apple/ml-videoflextok">
+                    <papertitle>[Code]</papertitle>
+                  </a>
+                <a href="https://huggingface.co/spaces/EPFL-VILAB/VideoFlexTok">
+                    <papertitle>[Demo]</papertitle>
+                  </a>
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr onmouseout="modus_stop()" onmouseover="modus_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="modus_image" style="opacity: 0;">
+                    <img src="images/modus.png" width="160"></div>
+                  <img src="images/modus.png" width="160">
+                </div>
+                <script type="text/javascript">
+                  function modus_start() {
+                    document.getElementById('modus_image').style.opacity = "1";
+                  }
+
+                  function modus_stop() {
+                    document.getElementById('modus_image').style.opacity = "0";
+                  }
+                  modus_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://modus-multimodal.epfl.ch/">
+                  <papertitle>MODUS: Decoder-only Any-to-Any Modeling of Diverse Modalities</papertitle>
+                </a>
+                <br>
+                <br>
+                M. Ye*, Z. An*, Z. Gao, X. Liu, <strong>O.F. Kar<sup>&dagger;</sup></strong>, J. Allardice<sup>&dagger;</sup>, R. Bachmann<sup>&dagger;</sup>, D. Mizrahi<sup>&dagger;</sup>, F. Fleuret, C. Li, A. Zadeh, S. Belongie, A. Dehghan, A. Zamir
+                <br>
+                <em>ICML</em>, 2026
+                <br>
+                <a href="https://modus-multimodal.epfl.ch/">
+                    <papertitle>[Website]</papertitle>
+                  </a>
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr onmouseout="tst_stop()" onmouseover="tst_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="tst_image" style="opacity: 0;">
+                    <img src="images/tst.png" width="160"></div>
+                  <img src="images/tst.png" width="160">
+                </div>
+                <script type="text/javascript">
+                  function tst_start() {
+                    document.getElementById('tst_image').style.opacity = "1";
+                  }
+
+                  function tst_stop() {
+                    document.getElementById('tst_image').style.opacity = "0";
+                  }
+                  tst_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://tst-vision.epfl.ch/">
+                  <papertitle>Multimodality as Supervision: Self-Supervised Specialization to the Test Environment via Multimodality</papertitle>
+                </a>
+                <br>
+                <br>
+                K.P. Singh*, A. Garjani*, R. Singh, M.U. Khattak, E. Tarhan, J. Toskov, A. Atanov, <strong>O.F. Kar</strong>, A. Zamir
+                <br>
+                <em>ICLR</em>, 2026
+                <br>
+                <a href="https://tst-vision.epfl.ch/">
+                    <papertitle>[Website]</papertitle>
+                  </a>
+                <a href="https://github.com/EPFL-VILAB/tst-mm-vision">
+                    <papertitle>[Code]</papertitle>
+                  </a>
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
             <tr onmouseout="mfm_stop()" onmouseover="mfm_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
